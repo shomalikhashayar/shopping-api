@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-  overflow-x: hidden;
 }
 
 .header {
@@ -98,12 +97,14 @@
 /* Responsive for Mobile Screens */
 
 @media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .header {
     display: none;
   }
 
   .container {
-
     margin-top: 2em;
     padding-left: 20px;
     padding-right: 20px;
