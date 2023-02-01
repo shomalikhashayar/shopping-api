@@ -5,41 +5,81 @@
   font-family: "Rubik", sans-serif;
 }
 
-.heading {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 3em;
-  margin-top: 1em;
-}
-.cards-container {
+.header {
+  background-color: rgb(254, 250, 255);
+  padding: 40px;
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 20px 0 rgba(255, 27, 27, 0.3);
+  border-bottom: 1px solid rgba(255, 99, 71, 0.145);
+  z-index: 2;
+}
+
+.header a {
+  text-decoration: none;
+  color: tomato;
+}
+.header a:focus {
+  text-decoration: none;
+  color: tomato;
+}
+.container {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding-left: 45px;
   padding-right: 45px;
 }
 
 .card {
-  width: 23%;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  width: 25%;
   text-align: center;
   padding: 1.5em;
   margin-bottom: 2em;
-  border-radius: 9px;
+  background-color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid rgba(255, 99, 71, 0.208);
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 0 rgba(255, 27, 27, 0.3);
+    z-index: 1;
 }
 
 .title {
-    font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.category{
-    font-weight: bold;
-    text-transform: capitalize;
-    margin: 1em;
-    font-size: 1.2em;
+.category,
+.price {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 1em;
+  font-size: 1.2rem;
 }
 
-.images{
+.images {
+  width: 80%;
+  margin-bottom: 2em;
+}
 
-
+.description {
+  font-size: 14px;
+  color: rgb(138, 138, 138);
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
