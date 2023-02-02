@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body onload="loadData()">
     <div class="header">
       <h1 class="heading">
         <a href="https://fakestoreapi.com/docs">Fake Store API</a>
@@ -29,10 +29,9 @@
       </div>
     </div>
     <div class="footer">
-        <p class="footer-para">
-            Made with ❤️ by Khashayar Shomali.
-        </p>
+      <p class="footer-para">Made with ❤️ by Khashayar Shomali.</p>
     </div>
+    <div hidden class="spinner"></div>
   </body>
   <script src="app.js"></script>
 </html>
